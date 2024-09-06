@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(88 92 92 / 50%);
+  ;
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 90%;
+  position: relative;
+  background-color: rgb(216 219 219 / 69%);
+  border-radius: 20px;
+  top: 5%;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+  cursor: pointer;
+
+}
+nav ul li:hover{
+  color: #fff;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+.account-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+main {
+  text-align: center;
+  position: relative;
+  height: calc(55% - 50px);
+}
+
+.background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  font-weight: bold;
+  opacity: 0.1;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.car-details {
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.car-image {
+  max-width: 80%;
+  max-height: 45vh;
+  object-fit: contain;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: rgb(216 219 219 / 69%);
+  color: black;
+}
+.new_button {
+  background-color: #fff;
+  color: black;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 48px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.arrow-left {
+  left: 40px;
+}
+
+.arrow-right {
+  right: 30px;
+}
+
+.social-links {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.social-link {
+  font-size: 24px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.social-link:hover {
+  color: red;
+}
+
+p {
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+  font-size: 20px;
+}
+/* 
+@media (max-width: 768px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  div>ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .background-text {
+    font-size: 48px;
+  }
+
+  .car-details h1 {
+    font-size: 24px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrow {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .background-text {
+    font-size: 36px;
+  }
+
+  .car-details h1 {
+    font-size: 20px;
+  }
+
+  .arrow {
+    font-size: 18px;
+  }
+
+  .social-link {
+    width: 30px;
+    height: 30px;
+
+  }
+} */
